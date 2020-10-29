@@ -1,0 +1,8 @@
+void insertionSort(int* array, int arrayLength) {
+    for (int i = 1; i < arrayLength; i++) {
+        for (int idx = i; idx > 0 && array[idx] < array[idx - 1]; idx--) {
+            swap(array[idx], array[idx - 1]);
+        }
+    }
+}
+//best from the slow sorting algos
